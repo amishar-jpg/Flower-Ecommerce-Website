@@ -132,7 +132,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="relative overflow-hidden bg-[#0b0f0c]">
+    <footer id="footer" className="relative overflow-hidden bg-[#0b0f0c]">
       {/* ── Flower image collage background ── */}
       {flowerImages.map((src, i) => {
         const pos = bgPositions[i];
