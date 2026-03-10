@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 52" width="200" height="52" fill="none">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&amp;display=swap');
+    </style>
+    <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Sprout icon -->
+  <g transform="translate(2, 0)" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <path d="M18 50 C18 42 17 32 18 8" fill="none"/>
+    <path d="M18 34 C11 27 2 23 5 12 C7 4 19 22 18 34 Z" fill="none"/>
+    <path d="M18 22 C25 15 34 11 31 2 C28 -5 17 14 18 22 Z" fill="none"/>
+  </g>
+
+  <!-- Brand name -->
+  <text
+    x="50" y="35"
+    font-family="'Playfair Display', Georgia, serif"
+    font-size="26"
+    font-weight="400"
+    fill="#FFFFFF"
+    letter-spacing="2"
+  >Florique</text>
+</svg>
