@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import ProductCard from "./ProductCard";
 import { products } from "@/data/products";
+import { ScrollReveal, StaggerContainer, StaggerChild } from "./ScrollReveal";
 
 const tabs = [
   { label: "New Products", value: "all" },
@@ -48,7 +49,10 @@ const ProductGrid = () => {
             } border border-gray-100`}
           >
             {/* Image side */}
-            <div
+            <ScrollReveal
+              variant={b.reverse ? "slideRight" : "slideLeft"}
+              delay={0.1}
+              duration={0.75}
               className={`relative h-72 md:h-80 bg-gray-50 overflow-hidden ${
                 b.reverse ? "order-last md:order-last" : ""
               }`}
@@ -60,10 +64,13 @@ const ProductGrid = () => {
                 className="object-cover"
                 unoptimized
               />
-            </div>
+            </ScrollReveal>
 
             {/* Text side */}
-            <div
+            <ScrollReveal
+              variant={b.reverse ? "slideLeft" : "slideRight"}
+              delay={0.22}
+              duration={0.75}
               className={`flex flex-col justify-center px-10 py-10 bg-white ${
                 b.reverse ? "order-first md:order-first" : ""
               }`}
@@ -82,7 +89,7 @@ const ProductGrid = () => {
                   Read More
                 </button>
               </div>
-            </div>
+            </ScrollReveal>
           </div>
         ))}
       </section>
@@ -90,38 +97,48 @@ const ProductGrid = () => {
       {/* ── Trending Products ──────────────────────────── */}
       <section className="max-w-7xl mx-auto px-6 pb-24">
         {/* Header */}
-        <div className="text-center mb-3">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
-            Trending Products
-          </h2>
-          <div className="flex justify-center mt-2 mb-6">
-            <span className="block w-8 h-0.5 bg-green-600"></span>
+        <ScrollReveal variant="fadeUp" delay={0.05}>
+          <div className="text-center mb-3">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900">
+              Trending Products
+            </h2>
+            <div className="flex justify-center mt-2 mb-6">
+              <span className="block w-8 h-0.5 bg-green-600"></span>
+            </div>
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* Tab Filters */}
-        <div className="flex justify-center gap-8 mb-10 border-b border-gray-100 pb-3">
-          {tabs.map(({ label, value }) => (
-            <button
-              key={value}
-              onClick={() => setFilter(value)}
-              className={`text-sm font-medium pb-1 transition-all duration-200 ${
-                filter === value
-                  ? "text-green-600 border-b-2 border-green-600"
-                  : "text-gray-500 hover:text-gray-800"
-              }`}
-            >
-              {label}
-            </button>
-          ))}
-        </div>
+        <ScrollReveal variant="fadeUp" delay={0.12}>
+          <div className="flex justify-center gap-8 mb-10 border-b border-gray-100 pb-3">
+            {tabs.map(({ label, value }) => (
+              <button
+                key={value}
+                onClick={() => setFilter(value)}
+                className={`text-sm font-medium pb-1 transition-all duration-200 ${
+                  filter === value
+                    ? "text-green-600 border-b-2 border-green-600"
+                    : "text-gray-500 hover:text-gray-800"
+                }`}
+              >
+                {label}
+              </button>
+            ))}
+          </div>
+        </ScrollReveal>
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        {/* Grid — staggered jump-in cards */}
+        <StaggerContainer
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
+          stagger={0.09}
+          delay={0.05}
+        >
           {filteredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <StaggerChild key={product.id} variant="jumpIn" duration={0.55}>
+              <ProductCard product={product} />
+            </StaggerChild>
           ))}
-        </div>
+        </StaggerContainer>
 
         {filteredProducts.length === 0 && (
           <div className="text-center py-24">

@@ -5,7 +5,7 @@ export const products = [
     category: "flower",
     price: 24.99,
     image:
-      "https://images.unsplash.com/photo-1491466424936-e304919aada7?w=600&q=80",
+      "https://www.jiomart.com/images/product/original/rvibirnytu/cloud-farm-real-live-dark-red-rose-live-plant-hybrid-for-balcony-terrace-outdoor-gardening-cf_2064-product-images-orvibirnytu-p603649580-0-202308050834.jpg?im=Resize=(1000,1000)",
     description:
       "A stunning red rose plant with vibrant blooms. Perfect for gardens, patios, and indoor decoration. Easy to care for and long-lasting.",
     rating: 4.8,
@@ -29,7 +29,7 @@ export const products = [
     category: "flower",
     price: 18.99,
     image:
-      "https://images.unsplash.com/photo-1499002238440-d264edd596ec?w=600&q=80",
+      "https://images.unsplash.com/photo-1471086569966-db3eebc25a59?w=600&q=80",
     description:
       "Fragrant lavender plant with beautiful purple flowers. Known for its calming scent and medicinal properties.",
     rating: 4.7,
@@ -48,24 +48,12 @@ export const products = [
     stock: 40,
   },
   {
-    id: 5,
-    name: "Sunflower",
-    category: "flower",
-    price: 15.99,
-    image:
-      "https://images.unsplash.com/photo-1470509037663-253afd7f0f51?w=600&q=80",
-    description:
-      "Bright and cheerful sunflower plant. Brings joy and sunshine to any garden or indoor space.",
-    rating: 4.8,
-    stock: 22,
-  },
-  {
     id: 6,
     name: "Fiddle Leaf Fig",
     category: "plant",
     price: 45.99,
     image:
-      "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=600&q=80",
+      "https://images.unsplash.com/photo-1545241047-6083a3684587?w=600&q=80",
     description:
       "Trendy indoor tree with large, violin-shaped leaves. Makes a bold statement in modern interiors.",
     rating: 4.5,
@@ -77,7 +65,7 @@ export const products = [
     category: "flower",
     price: 19.99,
     image:
-      "https://images.unsplash.com/photo-1488591795351-f6c6f6e3c11c?w=600&q=80",
+      "https://images.unsplash.com/photo-1520763185298-1b434c919102?w=600&q=80",
     description:
       "Elegant pink tulips perfect for spring gardens. Delicate petals and graceful stems create stunning displays.",
     rating: 4.7,
@@ -96,36 +84,12 @@ export const products = [
     stock: 20,
   },
   {
-    id: 9,
-    name: "Orchid",
-    category: "flower",
-    price: 39.99,
-    image:
-      "https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?w=600&q=80",
-    description:
-      "Exotic orchid with stunning blooms. A sophisticated addition to any home or office space.",
-    rating: 4.9,
-    stock: 15,
-  },
-  {
-    id: 10,
-    name: "Pothos Plant",
-    category: "plant",
-    price: 16.99,
-    image:
-      "https://images.unsplash.com/photo-1583952734497-c0b92cfe1d8b?w=600&q=80",
-    description:
-      "Trailing vine plant perfect for hanging baskets. Extremely easy to care for and fast-growing.",
-    rating: 4.6,
-    stock: 35,
-  },
-  {
     id: 11,
     name: "White Daisies",
     category: "flower",
     price: 14.99,
     image:
-      "https://images.unsplash.com/photo-1463936575829-25148e1db1b8?w=600&q=80",
+      "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600&q=80",
     description:
       "Classic white daisies that bring simplicity and charm. Perfect for cottage gardens and bouquets.",
     rating: 4.5,
@@ -144,24 +108,12 @@ export const products = [
     stock: 26,
   },
   {
-    id: 13,
-    name: "Peony",
-    category: "flower",
-    price: 32.99,
-    image:
-      "https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=600&q=80",
-    description:
-      "Luxurious peony flowers with full, romantic blooms. A favorite for weddings and special occasions.",
-    rating: 4.9,
-    stock: 14,
-  },
-  {
     id: 14,
     name: "Rubber Plant",
     category: "plant",
     price: 29.99,
     image:
-      "https://images.unsplash.com/photo-1610409151688-c5f8fe3b0c7e?w=600&q=80",
+      "https://images.unsplash.com/photo-1599598425947-5202edd56bdb?w=600&q=80",
     description:
       "Hardy plant with glossy, burgundy leaves. Great for purifying air and adding color indoors.",
     rating: 4.6,
@@ -173,7 +125,7 @@ export const products = [
     category: "flower",
     price: 28.99,
     image:
-      "https://images.unsplash.com/photo-1455659817273-f96807779a8a?w=600&q=80",
+      "https://images.unsplash.com/photo-1530092285049-1c42085fd395?w=600&q=80",
     description:
       "Beautiful hydrangea with clusters of vibrant blooms. Changes color based on soil pH.",
     rating: 4.8,
